@@ -44,10 +44,11 @@ const cellMax = 100
 
 startButton.addEventListener("click", function(){
     
-    
-
     for(let i = 1; i <= cellMax; i++) {
         const newCell = createCell(i)
+
+        newCell.innerText = i
+        console.log(i)
     }
 
 })
