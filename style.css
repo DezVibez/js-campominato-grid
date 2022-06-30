@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    height: 800px;
+    border: solid 1px black;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width:  100%;
+}
+
+.cell {
+    height: calc(100%/10);
+    width: calc(100%/10);
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
