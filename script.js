@@ -48,7 +48,15 @@ startButton.addEventListener("click", function(){
         const newCell = createCell(i)
 
         newCell.innerText = i
-        console.log(i)
+
+
+        newCell.addEventListener("click", function(){
+            console.log(i)
+            newCell.classList.add("clicked")
+        })
     }
 
 })
+
+
+
